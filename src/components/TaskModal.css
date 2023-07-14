@@ -1,0 +1,23 @@
+.ui.modals .ui.modal {
+  top: 26vh;
+}
+
+.taskForm {
+  padding: 26px 23px;
+}
+
+.datePickerContainer .react-datepicker-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .ui.modals .ui.modal {
+    top: 15vh;
+  }
+}
+
+@media (max-width: 580px) {
+  .ui.modals .ui.modal {
+    top: 11vh;
+  }
+}

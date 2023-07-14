@@ -1,0 +1,90 @@
+.TaskManager .taskHeader {
+  position: sticky; /* Make task header stick rather than scroll with TaskManager div */
+  top: 0;           /* Make task header stick */
+  font-weight: bold;
+  background: #c6b6a1;
+  z-index: 1;
+}
+
+.TaskManager .taskHeader > div:hover {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.topButtons {
+  display: flex;
+  justify-content: center;
+  background: #9f8e66;
+}
+
+.topButtons > * {
+  width: 196px !important;
+  margin: 10px 9px !important;
+  background: #d9b280 !important;
+}
+
+.topButtons > div > div.text {
+  color: #00000099 !important;
+}
+
+.TaskManager .task {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr 1.5fr 1.0fr;
+  column-gap: 10px;
+  min-height: 30px;
+  padding: 0 10px;
+}
+
+.TaskManager .task:nth-child(even) {
+  background: #ece7e3;
+}
+
+.TaskManager .task > div {
+  margin: auto 0;
+}
+
+.TaskManager .task .category,
+.TaskManager .task .name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.TaskManager .task .btnContainer {
+  display: flex;
+}
+
+.TaskManager .task .btnContainer button {
+  height: 22px;
+  width: 33px;
+  padding: 0;
+  margin: 0 6px;
+}
+
+@media (max-width: 580px) {
+  .TaskManager .task {
+    grid-template-columns: 2fr 3fr 2fr;
+    padding: 0px 10px 7px;
+  }
+
+  .TaskManager .task > div {
+    padding: 5px 0;
+  }
+
+  .TaskManager .dueDateTitle {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .topButtons button .addBtnText {
+    display: none;
+  }
+
+  .topButtons button .add.icon {
+    margin-right: 0 !important;
+  }
+}
