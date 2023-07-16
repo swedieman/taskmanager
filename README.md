@@ -18,8 +18,6 @@ Change `REACT_APP_API_URL` in `.env` if you need to use a different API endpoint
 ## Known Issues
 * There is currently nothing that checks that all fields are filled in when create a new task.
 * When sorting by column the sort order is not always correct.
-* Sometimes different tasks can get the same ID which may result in unexpected behavior as the backend will delete or
-  edit the first task it finds (which may be different from the one you want to modify).
 
 ## Available Scripts
 
